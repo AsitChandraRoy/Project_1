@@ -1,0 +1,1152 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+}
+
+.flex{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.svg {
+  height: 20px;
+  width: 20px;
+  background-color: black;
+  border-radius: 9px;
+
+  & svg {
+    color: white;
+    width: 18px;
+  }
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px 0 12px 0;
+
+  & img {
+    width: 150px;
+    margin-left: -8vw;
+    cursor: pointer;
+  }
+
+  .middle {
+    gap: 20px;
+    list-style: none;
+    font-size: 18px;
+  }
+
+  .buttons {
+    gap: 12px;
+    margin-right: -8vw;
+
+    .btn1 {
+      padding: 8px;
+      width: 70px;
+      background-color: #f1f1f1;
+      /* border: 2px solid rgb(20, 174, 92); */
+      border-radius: 50px;
+      border: none;
+    }
+
+    .btn2 {
+      padding: 6px;
+      width: 110px;
+      color: #ffffff;
+      background-color: #1f1f1f;
+      border-radius: 60px;
+    }
+  }
+}
+
+/* Section 2 */
+.background {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .background-image {
+    width: 100%;
+    height: 90vh;
+    position: fit-content;
+  }
+
+  .find-offer {
+    height: 36vh;
+    width: 70vw;
+    background-color: #ffffff;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    .find-image {
+      width: 16vw;
+      margin-top: 5vh;
+    }
+
+    .item1 {
+      grid-area: currency1;
+    }
+    .item2 {
+      grid-area: buy;
+    }
+    .item3 {
+      grid-area: payment;
+    }
+    .item4 {
+      grid-area: currency2;
+    }
+    .item5 {
+      grid-area: how;
+    }
+    .item6 {
+      grid-area: find;
+    }
+
+    .find-grid {
+      margin-top: 70px;
+      gap: 10px;
+
+      display: grid;
+      grid-template-areas:
+        "currency1 buy payment currency2"
+        "how how how find";
+
+      .item {
+        gap: 4vw;
+        font-size: 14px;
+        height: 33px;
+        width: 15vw;
+        background-color: #ececec;
+        border-radius: 5px;
+      }
+
+      .item5 {
+        width: 46vw;
+      }
+
+      .item6 {
+        border-radius: 60px;
+        background-color: #00ebc7;
+      }
+    }
+  }
+
+  .why-zappr {
+    position: absolute;
+    bottom: 10%;
+
+    & p {
+      border: 1px solid #ffffff;
+      padding: 5px 12px;
+      color: #ffffff;
+      border-radius: 50px;
+      text-decoration: underline;
+    }
+  }
+}
+
+/* Section 3 */
+.yellow {
+  flex-direction: column;
+  background-color: #fde24f;
+  padding: 40px;
+  gap: 30px;
+  border-bottom: 1px solid #1f1f1f;
+
+  & h3 {
+    font-weight: 500;
+  }
+
+  .coin {
+    & img {
+      margin-left: 11px;
+    }
+  }
+}
+
+/* Section 4 */
+.features {
+  padding: 50px 40px 40px 40px;
+  border-bottom: 1px solid #9b9b9b;
+
+  .feature-item {
+    gap: 10vw;
+    margin-top: 50px;
+
+    .card {
+      flex-direction: column;
+      gap: 10px;
+
+      & img {
+        width: 50px;
+      }
+
+      & h4 {
+        width: 186px;
+        text-align: center;
+      }
+
+      & p {
+        font-size: 12px;
+        width: 180px;
+        text-align: center;
+      }
+
+      & span {
+        width: 188px;
+        text-align: center;
+        font-size: 10px;
+        text-decoration: underline;
+        margin-top: 10px;
+        font-weight: 700;
+      }
+    }
+  }
+
+  .see {
+    & h5 {
+      text-align: center;
+      margin-top: 50px;
+      border: 1px solid black;
+      width: 120px;
+      padding: 6px;
+      border-radius: 60px;
+    }
+  }
+}
+
+.line {
+  height: 1px;
+  width: 70px;
+  background-color: black;
+  margin-top: -20px;
+}
+/* Section 5 */
+.buy-sell {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-bottom: 40px;
+  height: 46vh;
+
+  & h3 {
+    padding: 50px 40px 30px;
+    font-weight: 600;
+    margin-left: -7px;
+  }
+
+  .buy {
+    flex-direction: column;
+
+    .buy-sell-image {
+      gap: 5vw;
+      margin-bottom: 30px;
+      border: 1px solid #1f1f1f;
+      border-radius: 8px;
+      width: 45vw;
+      padding: 8px;
+
+      & img {
+        width: 40px;
+      }
+
+      .details {
+        gap: 13vw;
+        font-size: 12px;
+      }
+    }
+  }
+  .view {
+
+    & h5 {
+      text-align: center;
+      background-color: #000000;
+      font-size: 12px;
+      font-weight: 400;
+      color: #f1f1f1;
+      padding: 6px;
+      width: 120px;
+      border-radius: 11px;
+    }
+  }
+}
+
+.border-right {
+  border-right: 1px solid #9b9b9b;
+}
+
+/* Section 6 */
+.sign-up {
+  text-align: center;
+  background-color: #cfbaff;
+  width: 100%;
+  height: 40vh;
+  margin-top: -42px;
+  padding-top: 120px;
+
+  & h1 {
+    font-size: 3em;
+    font-weight: 500;
+    margin-bottom: -49px;
+  }
+
+  .button {
+    & button {
+      padding: 8px;
+      width: 160px;
+      font-size: 20px;
+      color: #ffffff;
+      background-color: #1f1f1f;
+      border-radius: 17px;
+      margin-top: 20vh;
+    }
+  }
+}
+
+/* Section 7 */
+.spacio {
+  display: grid;
+  flex-direction: column;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  background-color: #000000;
+  padding: 90px 0 30px 70px;
+
+  .div {
+    color: #ffffff;
+
+    & h3 {
+      font-weight: 500;
+      margin-bottom: 20px;
+    }
+
+    .option {
+      font-size: 14px;
+
+      & p {
+        margin-bottom: 10px;
+      }
+    }
+  }
+}
+
+/* Footer */
+footer {
+  padding: 30px 90px;
+  font-size: 0.8rem;
+  color: #ffffff;
+  background-color: #000000;
+  height: 6vh;
+  border-top: 1px solid #9b9b9b;
+}
+
+/* Responsive for iPhone 14 Pro Max */
+@media (max-device-width: 431px){
+  .background .find-offer .find-grid{
+    margin-bottom: 11vh !important;
+    padding-bottom: 20px;
+  }
+    /* Section 5 */
+    .buy-sell {
+      .buy {
+        .buy-sell-image {
+          gap: 5vw !important;
+
+          .details {
+            gap: 3vw !important;
+
+            & p {
+              font-size: 11px !important;
+            }
+          }
+        }
+      }
+    }
+}
+
+/* Responsive for iPhone XR & Pixel 7 & Samsung Galaxy S20 Ultra & Samsung Galaxy A51/71*/
+@media (max-device-width: 415px) {
+  .navbar {
+    justify-content: center !important;
+    gap: 38px !important;
+
+    & img {
+      width: 100px !important;
+    }
+
+    .buttons {
+      gap: 10px !important;
+    }
+  }
+
+  /* Section 2 */
+
+  .why-zappr {
+    bottom: 3% !important;
+  }
+
+  /* Section 3 */
+  .yellow {
+    .coin {
+      & img {
+        width: 9vw !important;
+      }
+    }
+  }
+
+  /* Section 5 */
+  .buy-sell {
+    height: 40vh !important;
+    .buy {
+      .buy-sell-image {
+        gap: 5vw !important;
+
+        .details {
+          gap: 3vw !important;
+
+          & p {
+            font-size: 11px !important;
+          }
+        }
+      }
+    }
+  }
+  /* Section 6 */
+  .sign-up {
+    height: 20vh !important;
+
+    & h1 {
+      font-size: 1.5em !important;
+    }
+  }
+
+  /* Footer */
+  .footer {
+    font-size: 0.8rem !important;
+    height: 20vh !important;
+  }
+}
+
+/* Responsive for iPhone XR */
+@media (max-device-width: 391px){
+    .sign-up{
+      height: 20vh !important;
+    }
+    /* Section 5 */
+    .buy-sell {
+      .buy {
+        .buy-sell-image {
+          gap: 2vw !important;
+
+          .details {
+            gap: 1vw !important;
+
+            & p {
+              font-size: 11px !important;
+            }
+          }
+        }
+      }
+    }
+
+    .footer{
+      height: 20vh !important;
+    }
+}
+
+/* Responsive for iPhone SE */
+@media (max-device-width: 376px) {
+  /* Section 2 */
+  #find-grid {
+    margin-top: -0.01px !important;
+    padding-top: 4px;
+  }
+
+  /* Section 5 */
+  .buy-sell {
+    height: 50vh !important;
+    .buy {
+      .buy-sell-image {
+        gap: 4vw !important;
+        .details {
+          gap: 6vw !important;
+
+          & p {
+            font-size: 10px !important;
+          }
+        }
+      }
+    }
+  }
+  /* Section 6 */
+  .sign-up {
+    height: 40vh;
+    margin-top: 84vh !important;
+
+    & h1 {
+      font-size: 1.4em !important;
+      margin-top: -10vh !important;
+    }
+
+    .gap {
+      height: 110px;
+    }
+
+    .button {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  /* Footer */
+  .footer {
+    font-size: 0.7em !important;
+    height: 22vh !important;
+  }
+}
+/* Responsive for iPhone 12 Pro */
+@media (max-device-width: 391px) {
+  /* Footer */
+  footer {
+    height: 22vh !important;
+  }
+}
+
+/* Responsive for Nest Hub Max */
+@media (max-device-width: 1281px) {
+  /* Section 5 */
+  .buy-sell {
+    height: 73vh;
+    .buy {
+      .buy-sell-image {
+        gap: 3vw;
+
+        .details {
+          gap: 8vw;
+        }
+      }
+    }
+  }
+
+  /* Section 6 */
+  .sign-up {
+    margin-top: -42px;
+
+    & h1 {
+      font-size: 2.5em;
+      margin-top: -49px;
+    }
+  }
+
+  /* Footer */
+  footer {
+    padding: 30px 10px;
+    height: 12vh;
+  }
+}
+
+/* Responsive for Surface Pro 7*/
+@media (device-width: 912px) {
+  .buy-sell{
+    height: 34vh;
+  }
+
+  .sign-up{
+    height: 30vh;
+  }
+
+  .footer{
+    height: 5vh;
+  }
+
+}
+
+/* Responsive for iPad Pro & Nest Hub*/
+@media (device-width: 1024px) {
+  /* Section 2 */
+  .background {
+    .background-image {
+      height: 50vh;
+    }
+
+    .find-offer {
+      gap: 2vh;
+      height: 26vh;
+      margin-top: -1vh;
+      padding-bottom: 16px;
+
+      .find-image {
+        width: 26vw;
+      }
+
+      .find-grid {
+        margin-top: -0.01vh;
+      }
+    }
+  }
+
+  .buy-sell{
+    height: 36vh;
+    /* height: 73vh; */ /* Nest Hub */
+  }
+
+  .sign-up{
+    height: 20vh!;
+  }
+
+  .footer{
+    height: 12vh;
+  }
+}
+
+/* Responsive for Surface Duo */
+@media (max-device-width: 541px) {
+  .navbar {
+    justify-content: center;
+    gap: 18px;
+
+    & img {
+      width: 120px;
+    }
+
+    .middle {
+      display: none;
+    }
+
+    .buttons {
+      gap: 8px;
+    }
+  }
+
+  /* Section 2 */
+  .background {
+    .background-image {
+      height: auto;
+    }
+
+    .find-offer {
+      height: 16vh;
+      width: 70vw;
+
+      .find-image {
+        width: 36vw;
+        margin-top: 1vh;
+      }
+
+      .item1 {
+        grid-area: currency1;
+      }
+      .item2 {
+        grid-area: buy;
+      }
+      .item3 {
+        grid-area: payment;
+      }
+      .item4 {
+        grid-area: currency2;
+      }
+      .item5 {
+        grid-area: how;
+      }
+      .item6 {
+        grid-area: find;
+      }
+
+      #find-grid {
+        margin-top: 5px !important;
+        gap: 2px;
+
+        display: grid;
+        grid-template-areas:
+          "currency1 buy payment"
+          "currency2 how find";
+
+        .item {
+          gap: 4vw;
+          width: 20vw;
+
+          & img {
+            display: none;
+          }
+        }
+
+        .item5 {
+          text-align: center;
+        }
+
+        .item6 {
+          text-align: center;
+          border-radius: 60px;
+          background-color: #00ebc7;
+        }
+      }
+    }
+
+    .why-zappr {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      bottom: 3% !important;
+
+      & p {
+        font-size: 12px;
+        padding: 2px 12px;
+      }
+    }
+  }
+
+  /* Section 3 */
+  .yellow {
+    & h3 {
+      width: 85vw;
+    }
+
+    .coin {
+      & img {
+        width: 9vw;
+      }
+    }
+  }
+
+  /* Section 4 */
+  .features {
+    & h3 {
+      text-align: center;
+    }
+
+    .feature-item {
+      flex-direction: column;
+      gap: 8vw;
+      margin-top: 20px;
+    }
+  }
+
+  .line {
+    display: none;
+  }
+  /* Section 5 */
+  .buy-sell {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 0px;
+    height: 43vh !important;
+
+    & h3 {
+      text-align: center;
+      padding: 30px;
+    }
+
+    .buy {
+      .buy-sell-image {
+        gap: 2vw;
+        width: 83vw;
+        padding: 8px;
+
+        .details {
+          gap: 10vw !important;
+        }
+      }
+    }
+  }
+
+  .border-right {
+    border-right: #ffffff;
+  }
+
+  /* Section 6 */
+  .sign-up {
+    height: 40vh;
+    margin-top: 472px;
+
+    & h1 {
+      font-size: 2em;
+      margin-top: -49px;
+    }
+
+    .button {
+      margin-top: -140px !important;
+    }
+  }
+
+  /* Section 7 */
+  .spacio {
+    gap: 2vw;
+    padding: 30px 0 30px 10px;
+
+    & img {
+      width: 30vw;
+    }
+  }
+
+  /* Footer */
+  footer {
+    padding: 30px 10px;
+    text-align: center;
+    font-size: 0.67rem !important;
+    height: 22vh !important;
+  }
+}
+
+/* Responsive for Asus Zenbook Fold */
+@media (max-device-width: 854px) {
+  .navbar {
+    justify-content: space-around;
+    gap: 0px;
+
+    & img {
+      width: 130px;
+      margin-left: 1px;
+    }
+
+    .buttons {
+      gap: 5px;
+      margin-right: 1px;
+    }
+  }
+
+  /* Section 2 */
+  .background {
+    .background-image {
+      height: auto;
+    }
+
+    .find-offer {
+      height: 16vh;
+      width: 70vw;
+
+      .find-image {
+        width: 36vw;
+        margin-top: 1vh;
+      }
+
+      .item1 {
+        grid-area: currency1;
+      }
+      .item2 {
+        grid-area: buy;
+      }
+      .item3 {
+        grid-area: payment;
+      }
+      .item4 {
+        grid-area: currency2;
+      }
+      .item5 {
+        grid-area: how;
+      }
+      .item6 {
+        grid-area: find;
+      }
+
+      .find-grid {
+        margin-top: 28px !important;
+        gap: 2px;
+
+        display: grid;
+        grid-template-areas:
+          "currency1 buy payment"
+          "currency2 how find";
+
+        .item {
+          gap: 4vw;
+          width: 20vw;
+
+          & img {
+            display: none;
+          }
+        }
+
+        .item5 {
+          text-align: center;
+        }
+
+        .item6 {
+          text-align: center;
+          border-radius: 60px;
+          background-color: #00ebc7;
+        }
+      }
+    }
+
+    .why-zappr {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      /* left: 39%; */
+      bottom: 3% !important;
+
+      & p {
+        font-size: 12px;
+        padding: 2px 12px;
+      }
+    }
+  }
+
+  /* Section 3 */
+  .yellow {
+    & h3 {
+      width: 85vw;
+      text-align: center;
+    }
+
+    .coin {
+      & img {
+        width: 10vw;
+      }
+    }
+  }
+
+  /* Section 4 */
+  .features {
+    & h3 {
+      text-align: center;
+    }
+
+    .feature-item {
+      flex-direction: column;
+      gap: 8vw;
+      margin-top: 20px;
+
+      .card {
+        & p {
+          font-size: 16px;
+        }
+
+        & span {
+          font-size: 13px;
+          width: 250px;
+        }
+      }
+    }
+  }
+
+  .line {
+    display: none;
+  }
+  /* Section 5 */
+  .buy-sell {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 0px;
+    height: 30vh;
+
+    & h3 {
+      text-align: center;
+      padding: 30px;
+    }
+
+    .buy {
+      .buy-sell-image {
+        gap: 8vw;
+        width: 83vw;
+        padding: 8px;
+
+        .details {
+          gap: 18vw;
+
+          & p {
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  }
+
+  .border-right {
+    border-right: #ffffff;
+  }
+
+  /* Section 6 */
+  .sign-up {
+    height: 30vh;
+    margin-top: 472px;
+
+    & h1 {
+      font-size: 2.5em;
+      margin-top: -49px;
+    }
+  }
+
+  /* Section 7 */
+  .spacio {
+    gap: 2vw;
+    padding: 30px 0 30px 10px;
+
+    & img {
+      width: 30vw;
+    }
+  }
+
+  /* Footer */
+  .footer {
+    padding: 30px 10px;
+    text-align: center;
+    font-size: 0.9rem;
+    height: 9vh;
+  }
+}
+
+/* Responsive for iPad Air */
+@media (max-device-width: 821px) {
+  /* Section 5 */
+  .buy-sell {
+    .buy {
+      .buy-sell-image {
+        .details {
+          & p {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* Responsive for iPad Mini */
+@media (max-device-width: 769px) {
+  /* Section 2 */
+  .background {
+    .find-offer {
+      .find-grid {
+        margin-top: 25px;
+      }
+    }
+  }
+
+  /* Footer */
+  footer {
+    height: 12vh !important;
+  }
+}
+
+/* Responsive for Galaxy Z Fold 5 */
+@media (max-device-width: 345px) {
+  .navbar {
+    gap: 1px !important;
+    & img {
+      width: 100px !important;
+    }
+  }
+
+  /* Section 2 */
+  .background {
+    .find-offer {
+      height: 13vh;
+    }
+  }
+
+  /* Section 3 */
+  .yellow {
+    & h3 {
+      width: 93vw !important;
+    }
+
+    .coin {
+      & img {
+        width: 8vw !important;
+      }
+    }
+  }
+
+  /* Section 5 */
+  .buy-sell {
+    .buy {
+      .buy-sell-image {
+        .details {
+          gap: 11px !important;
+          & p {
+            font-size: 12px !important;
+          }
+        }
+      }
+    }
+  }
+
+  /* Section 7 */
+  .spacio {
+    gap: 1vw;
+    padding: 30px 10px 30px 10px;
+
+    & img {
+      width: 30vw;
+    }
+  }
+
+  footer {
+    height: 24vh !important;
+  }
+}
+
+/* Responsive for Surface Pro 7 & Samsung Galaxy S8+*/
+@media (max-device-width: 361px) {
+  .yellow{
+    & h3{
+      width: 90vw;
+    }
+    .coin {
+      width: 90vw;
+      text-align: center;
+    }
+  }
+
+  .buy-sell {
+    height: 23vh !important;
+    .buy {
+      .buy-sell-image {
+        gap: 1px !important;
+      }
+    }
+  }
+
+  .sign-up{
+    .gap{
+      height: 30vh;
+    }
+    .button button{
+      margin-top: -0.01vh !important;
+    }
+  }
+
+  footer{
+    height: 20vh !important;
+  }
+}
+
+/* Responsive for Surface Pro 7 */
+@media (max-device-width: 376px){
+  .find-offer{
+    padding-bottom: 5px;
+  }
+  .find-grid{
+    margin-bottom:  19vh !important;
+  }
+
+  footer{
+    height: 20vh !important;
+  }
+}
+
+/* Responsive for Surface Pro 7 */
+@media (max-device-width: 345px){
+  .buy-sell {
+    height: 10vh !important;
+  }
+}
